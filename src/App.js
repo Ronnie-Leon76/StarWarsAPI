@@ -66,10 +66,8 @@ function App() {
         releaseDate: data[key].releaseDate,
       });
     }
-    /**setMovies((prevMovies) => {
-      prevMovies = prevMovies + loadedMovies;
-    }); */
-    //setMovies(loadedMovies);
+    setMovies((prevMovies) => [...prevMovies, loadedMovies]);
+    
   }
 
   let content = <p>Found no movies</p>;
